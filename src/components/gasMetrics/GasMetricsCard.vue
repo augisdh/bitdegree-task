@@ -99,6 +99,9 @@ function toggleFlipCard() {
       color: #e7f6f2;
     }
   }
+  &__content__front {
+    transform: rotateY(0);
+  }
   &__content__back {
     transform: rotateY(180deg);
   }
@@ -107,6 +110,7 @@ function toggleFlipCard() {
     position: absolute;
     width: 100%;
     height: 100%;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
 }
